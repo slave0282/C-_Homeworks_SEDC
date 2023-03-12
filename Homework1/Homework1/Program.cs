@@ -1,6 +1,8 @@
 ﻿//// See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello, World!");
 
+using System.Diagnostics;
+
 Console.WriteLine("Enter two numbers");
 
 
@@ -32,6 +34,24 @@ switch (operation)
         break;
 }
 Console.WriteLine("The result is " + result);
+
+Console.WriteLine("Enter a number from 1-3");
+string userInput = Console.ReadLine();
+switch (userInput)
+{
+    case "1":
+        Console.WriteLine("You got a new car");
+        break;
+    case "2":
+        Console.WriteLine("You got a new plane");
+        break;
+    case "3":
+        Console.WriteLine("You got a new bike");
+        break;
+    default:
+        Console.WriteLine("You entered an invalid number");
+        break;
+}
 
 
 
